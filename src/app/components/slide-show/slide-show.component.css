@@ -1,0 +1,33 @@
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.galery{
+  margin: 200px auto;
+  width: 480px;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+.photo {
+  position: absolute;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+  25%{
+    opacity: 1;
+    transform:scale(1.1,1.1);
+  }
+  50%{
+    opacity: 0;
+  }
+}

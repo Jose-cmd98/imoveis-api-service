@@ -20,6 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MatCardModule } from '@angular/material/card';
 import { ImovelCardComponent } from './components/imovel-card/imovel-card.component';
+import { SlideShowComponent } from './components/slide-show/slide-show.component';
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
+import { OwlModule } from 'ngx-owl-carousel';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +35,8 @@ import { ImovelCardComponent } from './components/imovel-card/imovel-card.compon
     HomePageComponent,
     SobrePageComponent,
     ImoveisPageComponent,
-    ImovelCardComponent
+    ImovelCardComponent,
+    SlideShowComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,10 @@ import { ImovelCardComponent } from './components/imovel-card/imovel-card.compon
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    CarouselModule,
+    OwlModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
