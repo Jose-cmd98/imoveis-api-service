@@ -1,1 +1,2 @@
-<p *ngFor="let item of listaDeImoveis">{{item.address}}</p>
+
+<app-imovel-card *ngFor="let item of listaDeImoveis" [imovel]="item"></app-imovel-card>
